@@ -53,7 +53,7 @@ environment:
   - MISTRAL_API_KEY=your_key_here
 ```
 
-Ou via fichier `.env` monté dans le volume.
+Ne pas utiliser `env_file: .env` dans Portainer, car le fichier local n'est pas résolu dans le dossier interne `/data/compose/...`.
 
 ## Dépannage
 
